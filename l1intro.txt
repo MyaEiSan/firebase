@@ -1,0 +1,69 @@
+https://firebase.google.com/ 
+
+Click to Go to console > Create a project 
+Project name = My First Project 
+term = checked 
+confirm = checked 
+Click Continue 
+
+Enable Google Analytics for this project 
+Click Create Project > Continue 
+
+=> Register An App For Web 
+Click </> web icon 
+Register app = My First App for Web 
+Also set up Firebase Hosting for this app = Unchecked 
+Click "Register app" 
+Click "Continue to the console" 
+
+=> Get Firebase SDK Code ( Software Development Kit)
+Click "Project overview" > Project settings > you can see your apps code 
+
+=> Setting Up Firebase Using CDN in your web app 
+Click "Project overview" > Project settings > Your apps > CDN 
+
+<script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.11.1/firebase-app.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  const firebaseConfig = {
+    apiKey: "AIzaSyC8US4JrXV9TGH9XIxxXdddeR-z9bSm27c",
+    authDomain: "my-first-project-311b2.firebaseapp.com",
+    projectId: "my-first-project-311b2",
+    storageBucket: "my-first-project-311b2.appspot.com",
+    messagingSenderId: "831432964903",
+    appId: "1:831432964903:web:3d58a712ed10c43a700702"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+</script>
+
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+=> Settings Up  Firebase Via NPM ( Javascript Node )
+
+https://nodejs.org/en
+
+Click "Download Node.js(LTS)" 
+
+=> For Ubuntu Linux 
+nvm install --lts ( to get latest version node and nvm (Node Version Manager))
+or 
+sudo apt-get install nodejs 
+sudo apt-get install npm 
+
+
+check version = node -v // v18.13.0 
+check version = npm -v / 9.2.0
+
+create folder = l3npmjs 
+go terminal and run "npm install firebase" or "npm i firebase" 
+
+
+
+30ND
