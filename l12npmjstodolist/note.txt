@@ -1,0 +1,46 @@
+https://firebase.google.com/ > Docs > Overview > Firebase Fundamental
+
+mpm init or  npm init -y 
+npm install firebase or npm install firebase@latest 
+npm install express or npm install express@latest
+
+to run this server 
+open with liveserver or node server.js or nodemon server.js 
+
+To run program using express server 
+node server.js or nodemon server.js (update ဖြစ်ရင် auto သိပြီး ပြန် run စရာမလိုဘူး nodemon က)
+
+express server က public folder eg.(dist folder) မှာ အပြောင်းအလဲ လုပ်ရင် ပြောင်းမယ် root (eg. src) မှာ လုပ်ရင်တော့ effect မဖြစ်ဘူး 
+
+To run program using vite 
+npm run dev
+
+vite က root folder (eg. src) မှာ အပြောင်းအလဲ လုပ်ရင် ပြောင်းမယ် public folder (eg. dist) မှာ လုပ်ရင်တော့ effect မဖြစ်ဘူး 
+
+=> How to use Vite 
+
+1. Install 
+    npm install --save-dev vite 
+
+2. Create a new file as vite.config.js file 
+    import { defineConfig } from 'vite'; 
+
+    export default defineConfig({
+        root: './src', 
+        build: {
+        outDir: '../dist', // define the output directory, the output directory for to build files 
+        }
+    });
+    
+3. Update package.json 
+    "scripts": {
+        "dev": "vite",
+        "build": "vite build"
+    },
+
+4. Run Build the app for production 
+    npm run build 
+
+5. Run Vite in development server 
+    npm run dev 
+
